@@ -1,0 +1,46 @@
+@-webkit-keyframes btn-red {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes btn-red {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.btn-red {
+	position: relative;
+	top: 50px;
+	left: 300px;
+	background-color: #ff7779;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.btn-red:hover, .btn-red:focus, .btn-red:active {
+  -webkit-animation-name: btn-red;
+  animation-name: btn-red;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
